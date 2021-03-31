@@ -1,0 +1,59 @@
+﻿@page
+@using netOnTheWeb.Models;
+@model netOnTheWeb.Pages.TeacherModel
+@{
+}
+
+
+<h1 style="margin-bottom: 30px; text-align: center">Teachers</h1>
+
+<table class="table table-striped table-wide" >
+
+    <thead>
+    <th width="20%">ID</th>
+    <th width="20%">NAME</th>
+    <th width="20%">CLASS ID</th>
+    <th width="20%">CLASS NAME</th>
+    </thead>
+    <tbody>
+
+        @foreach (Teacher teacher in Model.teachersList.getAllTeachers())
+
+        {
+            <tr>
+                <td>@teacher.getTeacherId()</td>
+                <td>@teacher.getTeacherName()</td>
+                <td>@teacher.getClass().getClassId()</td>
+                <td>@teacher.getClass().getClassName()</td>
+            </tr>
+        }
+
+        @*<tr style="border-bottom: solid blue 1px">
+
+                <td>@Model.teachersList.getTeacherFromList(0).getTeacherId()</td>
+                <td>@Model.teachersList.getTeacherFromList(0).getTeacherName()</td>
+                <td>@Model.teachersList.getTeacherFromList(0).getClass().getClassId()</td>
+                <td>@Model.teachersList.getTeacherFromList(0).getClass().getClassName()</td>
+
+            </tr>
+
+            <tr style="border-bottom: solid blue 1px">
+
+                <td>@Model.teachersList.getTeacherFromList(1).getTeacherId()</td>
+                <td>@Model.teachersList.getTeacherFromList(1).getTeacherName()</td>
+                <td>@Model.teachersList.getTeacherFromList(1).getClass().getClassId()</td>
+                <td>@Model.teachersList.getTeacherFromList(1).getClass().getClassName()</td>
+
+            </tr>
+
+            <tr style="border-bottom: solid blue 1px">
+
+                <td>@Model.teachersList.getTeacherFromList(2).getTeacherId()</td>
+                <td>@Model.teachersList.getTeacherFromList(2).getTeacherName()</td>
+                <td>@Model.teachersList.getTeacherFromList(2).getClass().getClassId()</td>
+                <td>@Model.teachersList.getTeacherFromList(2).getClass().getClassName()</td>
+
+            </tr>*@
+
+    </tbody>
+</table>

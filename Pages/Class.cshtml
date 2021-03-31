@@ -1,0 +1,52 @@
+﻿@page
+@using netOnTheWeb.Models;
+@model netOnTheWeb.Pages.ClassModel
+@{
+}
+
+<h1 style="margin-bottom: 30px; text-align: center">Classes</h1>
+
+
+<table class="table table-striped table-wide">
+
+    <thead>
+    <th width="20%">ID</th>
+    <th width="20%">NAME</th>
+    <th width="20%">TEACHER ID</th>
+    <th width="20%">TEACHER NAME</th>
+    </thead>
+    <tbody>
+
+        @foreach (Class cLass in Model.classesList.getAllClasses())
+
+        {
+            <tr>
+                <td>@cLass.getClassId()</td>
+                <td>@cLass.getClassName()</td>
+                <td>@cLass.getTeacher().getTeacherId()</td>
+                <td>@cLass.getTeacher().getTeacherName()</td>
+            </tr>
+        }
+
+        @*<tr style="border-bottom: solid blue 1px">
+            <td>@Model.classesList.getClassFromList(0).getClassId()</td>
+            <td>@Model.classesList.getClassFromList(0).getClassName()</td>
+            <td>@Model.classesList.getClassFromList(0).getTeacher().getTeacherId()</td>
+            <td>@Model.classesList.getClassFromList(0).getTeacher().getTeacherName()</td>
+        </tr>
+        <tr style="border-bottom: solid blue 1px">
+            <td>@Model.classesList.getClassFromList(1).getClassId()</td>
+            <td>@Model.classesList.getClassFromList(1).getClassName()</td>
+            <td>@Model.classesList.getClassFromList(1).getTeacher().getTeacherId()</td>
+            <td>@Model.classesList.getClassFromList(1).getTeacher().getTeacherName()</td>
+        </tr>
+        <tr style="border-bottom: solid blue 1px">
+
+            <td>@Model.classesList.getClassFromList(2).getClassId()</td>
+            <td>@Model.classesList.getClassFromList(2).getClassName()</td>
+            <td>@Model.classesList.getClassFromList(2).getTeacher().getTeacherId()</td>
+            <td>@Model.classesList.getClassFromList(2).getTeacher().getTeacherName()</td>
+        </tr>*@
+
+    </tbody>
+</table>
