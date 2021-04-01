@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\safra\\Desktop\\netOnTheWeb\\netOnTheWeb.csproj",
+      "projectUniqueName": "C:\\Users\\safra\\Desktop\\net-on-the-web\\netOnTheWeb.csproj",
       "projectName": "netOnTheWeb",
-      "projectPath": "C:\\Users\\safra\\Desktop\\netOnTheWeb\\netOnTheWeb.csproj",
+      "projectPath": "C:\\Users\\safra\\Desktop\\net-on-the-web\\netOnTheWeb.csproj",
       "packagesPath": "C:\\Users\\safra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\safra\\Desktop\\netOnTheWeb\\obj\\",
+      "outputPath": "C:\\Users\\safra\\Desktop\\net-on-the-web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

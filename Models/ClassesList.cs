@@ -26,8 +26,8 @@ namespace netOnTheWeb.Models
 
             foreach( Teacher teacher in allTeachers)
             {
-                var teacherID = teacher.getTeacherId();
-                var teacherName = teacher.getTeacherName();
+                //var teacherID = teacher.getTeacherId();
+                //var teacherName = teacher.getTeacherName();
                 var teacherClassId = teacher.getClass().getClassId();
 
                 classesList.Find(x => x.getClassId() == teacherClassId).setTeacher(teacher);

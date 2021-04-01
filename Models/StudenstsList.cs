@@ -13,8 +13,8 @@ namespace netOnTheWeb.Models
         public StudenstsList()
         {
             studentsList.Add(new Student(1, "Serkan", new ClassesList().getClassFromList(0)));
-            studentsList.Add(new Student(1, "Selin", new ClassesList().getClassFromList(1)));
-            studentsList.Add(new Student(1, "Esin", new ClassesList().getClassFromList(2)));
+            studentsList.Add(new Student(2, "Selin", new ClassesList().getClassFromList(1)));
+            studentsList.Add(new Student(3, "Esin", new ClassesList().getClassFromList(2)));
 
         }
 
